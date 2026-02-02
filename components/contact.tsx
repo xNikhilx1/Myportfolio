@@ -5,7 +5,7 @@ import { Mail, Instagram } from "lucide-react";
 
 export function Contact() {
   const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -34,6 +34,7 @@ export function Contact() {
         >
           {"04. What's Next?"}
         </p>
+
         <h2
           className={`text-3xl md:text-5xl font-bold text-foreground mb-6 transition-all duration-700 delay-100 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -41,6 +42,7 @@ export function Contact() {
         >
           Get In Touch
         </h2>
+
         <p
           className={`text-muted-foreground text-lg mb-10 leading-relaxed transition-all duration-700 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -50,6 +52,7 @@ export function Contact() {
             "I'm currently looking for new opportunities and my inbox is always open. Whether you have a question, want to collaborate, or just want to say hi, I'll try my best to get back to you!"
           }
         </p>
+
         <div
           className={`flex flex-col sm:flex-row items-center justify-center gap-4 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -63,6 +66,7 @@ export function Contact() {
             <Mail size={20} />
             Say Hello
           </a>
+
           <a
             href="https://instagram.com/nikhil.tif_"
             target="_blank"

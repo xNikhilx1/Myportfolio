@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 export function About() {
   const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -79,7 +79,6 @@ export function About() {
 
           {/* Profile Image Card */}
           <div className="relative group">
-            {/* Image */}
             <div className="relative z-10 rounded-lg overflow-hidden aspect-square bg-black">
               <img
                 src="/nikhil-profile.jpg.jpeg"
@@ -88,10 +87,7 @@ export function About() {
               />
             </div>
 
-            {/* VERY SOFT GRADIENT */}
             <div className="absolute inset-0 rounded-lg bg-primary/20 blur-xl -z-10" />
-
-            {/* LIGHT BORDER FRAME */}
             <div className="absolute inset-0 rounded-lg border border-primary/60 translate-x-3 translate-y-3 -z-20 group-hover:translate-x-1.5 group-hover:translate-y-1.5 transition-transform duration-300" />
           </div>
         </div>

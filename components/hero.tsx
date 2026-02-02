@@ -19,10 +19,11 @@ export function Hero() {
               I build things for the web.
             </h2>
             <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto lg:mx-0 mb-8 animate-fade-up opacity-0 animation-delay-600 leading-relaxed">
-              {"I'm a frontend developer and Computer Science student at "}
-              <span className="text-primary">NIT Jalandhar</span>, specializing
-              in building exceptional digital experiences with modern web
-              technologies.
+              {
+                "I'm a Final year Student Pursuing Electronics & Communication Engineering at "
+              }
+              <span className="text-primary">NIT Jalandhar</span>, with a strong focus on building modern, high-quality
+              web applications and digital experiences.
             </p>
 
             <div className="flex items-center justify-center lg:justify-start gap-5 mb-8 animate-fade-in opacity-0 animation-delay-600">

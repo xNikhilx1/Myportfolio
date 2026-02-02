@@ -11,9 +11,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nikhil Geddam | Frontend Developer",
+  title: "Nikhil Geddam | Full Stack Developer",
   description:
-    "Frontend Developer & Computer Science Student at NIT Jalandhar. Specializing in React, Next.js, and modern web technologies.",
+    "Full Stack Developer & Electronics and Communication Student at NIT Jalandhar. Specializing in React, Next.js, and modern web technologies.",
 };
 
 export default function RootLayout({

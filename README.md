@@ -30,5 +30,9 @@ The portfolio highlights featured and noteworthy projects, provides an overview 
 - Projects
 - Contact
 ---
+ ## Live Demo
+🔗 Deployed on Vercel
+https://myportfolio-phi-virid.vercel.app/
+
 ## Author
 Nikhil Geddam
